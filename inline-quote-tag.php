@@ -1,18 +1,14 @@
 <?php
 
-
-
 /*
 Plugin Name: Inline Quote Tag
-Plugin URI: http://www.benhuson.co.uk/wordpress-plugins/inline-quote-tag/
+Plugin URI: http://wordpress.org/extend/plugins/inline-quote-tag/
 Description: Insert HTML inline quote tags.
-Version: 1.1.1
+Version: 1.2
 Author: Ben Huson
 Author URI: http://www.benhuson.co.uk/
 License: GPL2
 */
-
-
 
 /*
 Copyright 2010 Ben Huson (http://www.benhuson.co.uk)
@@ -31,92 +27,66 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-
-
-class Q_Tag
-{
-	
-	
+class Q_Tag {
 	
 	/**
-	 * @method       Constructor
-	 * @description  Initialise the class.
+	 * Constructor
 	 */
-	
-	function Q_Tag()
-	{
+	function Q_Tag() {
+		add_action( 'admin_init', array( $this, 'admin_init' ) );
 	}
 	
-	function admin_init()
-	{
+	/**
+	 * Admin Init
+	 */
+	function admin_init() {
 		$this->add_buttons();
 	}
 	
-	
-	
 	/**
-	 * @method       Add Buttons
-	 * @description  This function add buttons to the Rich Editor.
+	 * Add Buttons
+	 * Adds buttons to the Rich Editor.
 	 */
-	
-	function add_buttons()
-	{
+	function add_buttons() {
 	
 		// Don't bother doing this stuff if the current user lacks permissions
-		if ( !current_user_can( 'edit_posts' ) && !current_user_can( 'edit_pages' ) )
+		if ( ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) )
 			return;
 		
 		// Add only in Rich Editor mode
-		if ( get_user_option('rich_editing') == 'true' )
-		{
+		if ( get_user_option('rich_editing') == 'true' ) {
 			add_filter( 'mce_buttons', array( $this, 'register_map_button' ) );
 			add_filter( 'mce_external_plugins', array( $this, 'add_map_plugin' ) );
 		}
-	
 	}
 	
-	
-	
 	/**
-	 * @method       Register Map Button
-	 * @description  This function add the WP Geo map button to the editor.
-	 * @parameter    $buttons = Array of editor buttons
-	 * @return       $buttons array
+	 * Register Map Button
+	 * This function adds inline quote button to the editor.
+	 *
+	 * @param $buttons array Editor buttons.
+	 * @return array Buttons.
 	 */
-	
-	function register_map_button( $buttons )
-	{
-	
+	function register_map_button( $buttons ) {
 		array_push( $buttons, 'separator', 'qtag' );
 		return $buttons;
-	
 	}
-	
-	
 	
 	/**
-	 * @method       Load TinyMCE WP Geo Plugin
-	 * @description  This function add the WP Geo map button to the editor.
-	 * @parameter    $plugin_array = Array of TinyMCE plugins
-	 * @return       $plugin_array array
+	 * Load TinyMCE Inline Quote Plugin
+	 * Add the Inline Quote button to the editor.
+	 *
+	 * @param $plugin_array array TinyMCE plugins.
+	 * @return array Plugins.
 	 */
-	
-	function add_map_plugin( $plugin_array )
-	{
-	
+	function add_map_plugin( $plugin_array ) {
 		$plugin_array['qtag'] = WP_PLUGIN_URL . '/inline-quote-tag/js/tinymce/plugins/qtag/editor_plugin.js';
 		return $plugin_array;
-	
 	}
 	
-	
-
 }
 
+global $q_tag;
 $q_tag = new Q_Tag();
-
-add_action('admin_init', array($q_tag, 'admin_init'));
-
-
 
 ?>

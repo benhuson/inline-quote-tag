@@ -33,8 +33,8 @@
 			return {
 				longname : 'Q Tag',
 				author : 'Ben Huson',
-				authorurl : 'http://www.camber-group.com',
-				infourl : 'http://www.camber-group.com',
+				authorurl : 'http://www.benhuson.co.uk',
+				infourl : 'http://www.benhuson.co.uk',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}
