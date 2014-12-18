@@ -16,7 +16,7 @@
 
 			// Register commands
 			ed.addCommand('mceQTag', function() {
-				ed.execCommand('mceReplaceContent', false, '<q>{$selection}</q>');
+				ed.execCommand('mceReplaceContent', false, ' <q>{$selection}</q> ');
 			});
 
 			// Register buttons
