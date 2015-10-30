@@ -33,8 +33,8 @@
 			return {
 				longname : 'Q Tag',
 				author : 'Ben Huson',
-				authorurl : 'http://www.benhuson.co.uk',
-				infourl : 'http://www.benhuson.co.uk',
+				authorurl : 'https://github.com/benhuson',
+				infourl : 'https://github.com/benhuson/inline-quote-tag',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}

@@ -6,7 +6,7 @@ Plugin URI: https://wordpress.org/plugins/inline-quote-tag/
 Description: Insert HTML inline quote tags.
 Version: 1.3
 Author: Ben Huson
-Author URI: http://www.benhuson.co.uk/
+Author URI: https://github.com/benhuson/inline-quote-tag
 License: GPL2
 */
 

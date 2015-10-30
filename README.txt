@@ -1,6 +1,6 @@
 === Inline Quote Tag  ===
 Contributors: husobj
-Donate link: http://www.benhuson.co.uk/donate/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XYN56KE3V4ZZY
 Tags: html, quote, editor
 Requires at least: 3.7
 Tested up to: 4.2
