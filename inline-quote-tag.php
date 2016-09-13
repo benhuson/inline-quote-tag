@@ -81,6 +81,7 @@ class Q_Tag {
 	public function register_map_button( $buttons ) {
 
 		array_push( $buttons, 'separator', 'qtag' );
+		array_push( $buttons, 'separator', 'citetag' );
 
 		return $buttons;
 
@@ -97,6 +98,7 @@ class Q_Tag {
 	public function add_map_plugin( $plugin_array ) {
 
 		$plugin_array['qtag'] = plugins_url( 'js/tinymce/plugins/qtag/editor_plugin.js', __FILE__ );
+		$plugin_array['citetag'] = plugins_url( 'js/tinymce/plugins/citetag/editor_plugin.js', __FILE__ );
 
 		return $plugin_array;
 
