@@ -1,4 +1,4 @@
-=== Inline Quote Tag  ===
+=== Inline Quote & Cite Tags  ===
 Contributors: husobj
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XYN56KE3V4ZZY
 Tags: html, quote, editor

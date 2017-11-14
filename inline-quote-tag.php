@@ -1,9 +1,9 @@
 <?php
 
 /*
-Plugin Name: Inline Quote Tag
+Plugin Name: Inline Quote & Cite Tags
 Plugin URI: https://wordpress.org/plugins/inline-quote-tag/
-Description: Insert HTML inline quote tags.
+Description: Insert HTML inline quote `q` and `cite` tags.
 Version: 1.3.1
 Author: Ben Huson
 Author URI: https://github.com/benhuson/inline-quote-tag
