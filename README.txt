@@ -29,7 +29,9 @@ None at present.
 
 == Screenshots ==
 
-1. Inline Quote Tag Button
+1. Editor Buttons
+2. Inline Quote Tag Button
+3. Cite Tag Button
 
 == Changelog ==
 
