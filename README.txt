@@ -8,13 +8,13 @@ Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This simple plugin adds a button to the WordPress rich HTML editor to add an inline quote tag.
+This simple plugin adds buttons to the WordPress rich HTML editor to add inline quote and cite tags.
 
 == Description ==
 
-This simple plugin adds a button to the WordPress rich HTML editor to add an inline quote tag.
+This simple plugin adds buttons to the WordPress rich HTML editor to add inline quote and cite tags.
 
-It inserts `<q>` tags and ensures they work when switching between HTML and rich editor views.
+It inserts `<q>` and `<cite>` tags and ensures they work when switching between HTML and rich editor views.
 
 == Installation ==
 
@@ -37,7 +37,7 @@ None at present.
 
 = 1.3.1 =
 
-* Use plugins_url() instead of WP_PLUGIN_URL.
+* Use `plugins_url()` instead of `WP_PLUGIN_URL`.
 
 = 1.3 =
 
