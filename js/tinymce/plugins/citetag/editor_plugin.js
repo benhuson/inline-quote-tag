@@ -23,7 +23,7 @@
 			ed.addButton('citetag', {
 				title : 'Cite Tag',
 				cmd : 'mceCiteTag',
-				image : url + '/img/button.png'
+				image : url + '/img/button.svg'
 			});
 
 		},
