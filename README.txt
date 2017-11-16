@@ -2,8 +2,8 @@
 Contributors: husobj
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XYN56KE3V4ZZY
 Tags: html, quote, editor
-Requires at least: 3.7
-Tested up to: 4.3.1
+Requires at least: 3.9
+Tested up to: 4.9
 Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
