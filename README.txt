@@ -35,6 +35,12 @@ None at present.
 
 == Changelog ==
 
+= 1.4 =
+
+* Added `cite` tag support.
+* Added SVG editor icons.
+* Tested up to WordPress 4.9
+
 = 1.3.1 =
 
 * Use `plugins_url()` instead of `WP_PLUGIN_URL`.
