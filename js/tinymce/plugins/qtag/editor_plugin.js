@@ -23,7 +23,7 @@
 			ed.addButton('qtag', {
 				title : 'Q Tag',
 				cmd : 'mceQTag',
-				image : url + '/img/button.png'
+				image : url + '/img/button.svg'
 			});
 
 		},
