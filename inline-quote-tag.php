@@ -1,17 +1,17 @@
 <?php
 
 /*
-Plugin Name: Inline Quote Tag
+Plugin Name: Inline Quote & Cite Tags
 Plugin URI: https://wordpress.org/plugins/inline-quote-tag/
-Description: Insert HTML inline quote tags.
-Version: 1.3.1
+Description: Insert HTML inline quote `q` and `cite` tags.
+Version: 1.4
 Author: Ben Huson
 Author URI: https://github.com/benhuson/inline-quote-tag
 License: GPL2
 */
 
 /*
-Copyright 2010 Ben Huson (http://www.benhuson.co.uk)
+Copyright 2010 Ben Huson
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as 
@@ -81,6 +81,7 @@ class Q_Tag {
 	public function register_map_button( $buttons ) {
 
 		array_push( $buttons, 'separator', 'qtag' );
+		array_push( $buttons, 'separator', 'citetag' );
 
 		return $buttons;
 
@@ -97,6 +98,7 @@ class Q_Tag {
 	public function add_map_plugin( $plugin_array ) {
 
 		$plugin_array['qtag'] = plugins_url( 'js/tinymce/plugins/qtag/editor_plugin.js', __FILE__ );
+		$plugin_array['citetag'] = plugins_url( 'js/tinymce/plugins/citetag/editor_plugin.js', __FILE__ );
 
 		return $plugin_array;
 

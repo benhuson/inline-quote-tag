@@ -6,7 +6,7 @@
  */
 
 (function() {
-	tinymce.create('tinymce.plugins.QTag', {
+	tinymce.create('tinymce.plugins.CiteTag', {
 		
 		// Init.
 		init : function(ed, url) {
@@ -15,14 +15,14 @@
 			t.editor = ed;
 
 			// Register commands
-			ed.addCommand('mceQTag', function() {
-				ed.execCommand('mceReplaceContent', false, ' <q>{$selection}</q> ');
+			ed.addCommand('mceCiteTag', function() {
+				ed.execCommand('mceReplaceContent', false, ' <cite>{$selection}</cite> ');
 			});
 
 			// Register buttons
-			ed.addButton('qtag', {
-				title : 'Q Tag',
-				cmd : 'mceQTag',
+			ed.addButton('citetag', {
+				title : 'Cite Tag',
+				cmd : 'mceCiteTag',
 				image : url + '/img/button.svg'
 			});
 
@@ -31,7 +31,7 @@
 		// Get Info
 		getInfo : function() {
 			return {
-				longname : 'Q Tag',
+				longname : 'Cite Tag',
 				author : 'Ben Huson',
 				authorurl : 'https://github.com/benhuson',
 				infourl : 'https://github.com/benhuson/inline-quote-tag',
@@ -42,6 +42,6 @@
 	});
 
 	// Register plugin
-	tinymce.PluginManager.add('qtag', tinymce.plugins.QTag);
+	tinymce.PluginManager.add('citetag', tinymce.plugins.CiteTag);
 	
 })();
