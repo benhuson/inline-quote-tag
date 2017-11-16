@@ -20,6 +20,9 @@ If you are not performing an automatic upgrade, deactivate and reactivate the pl
 Upgrade Notice
 --------------
 
+### 1.4
+Added `cite` tag support and SVG editor icons.
+
 ### 1.3.1
 Use `plugins_url()` instead of `WP_PLUGIN_URL`.
 
